@@ -4,6 +4,7 @@ import logo from './logo.svg'
 import './App.css'
 
 const App = () => {
+  console.log('hoge')
   return (
     <div className="App">
       <header className="App-header">
