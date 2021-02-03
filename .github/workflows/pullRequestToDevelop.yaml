@@ -1,4 +1,4 @@
-name: Run on before merge to develop
+name: Pull request to develop
 on:
   pull_request:
     branches:
