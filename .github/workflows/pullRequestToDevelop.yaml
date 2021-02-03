@@ -97,7 +97,6 @@ jobs:
           firebaseServiceAccount: >-
             ${{ secrets.FIREBASE_SERVICE_ACCOUNT_GITHUB_ACTIONS_PRACTICE_784E3
             }}
-          channelId: live
           projectId: github-actions-practice-784e3
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
