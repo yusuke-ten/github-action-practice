@@ -6,76 +6,76 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
-  plugins: ["prettier", "import"],
+  plugins: ['prettier', 'import'],
   extends: [
-    "react-app",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
+    'react-app',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {},
   overrides: [
     {
-      files: ["**/*.ts?(x)"],
+      files: ['**/*.ts?(x)'],
       rules: {
-        "no-console": 0,
-        "prettier/prettier": "error",
-        "@typescript-eslint/no-unused-vars": [
+        'no-console': 0,
+        'prettier/prettier': 'error',
+        '@typescript-eslint/no-unused-vars': [
           1,
           {
-            args: "after-used",
-            argsIgnorePattern: "^_",
-            varsIgnorePattern: "^_",
+            args: 'after-used',
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
           },
         ],
-        "@typescript-eslint/explicit-function-return-type": 0,
-        "@typescript-eslint/member-delimiter-style": [
-          "error",
+        '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslint/member-delimiter-style': [
+          'error',
           {
             multiline: {
-              delimiter: "none",
+              delimiter: 'none',
               requireLast: false,
             },
             singleline: {
-              delimiter: "semi",
+              delimiter: 'semi',
               requireLast: false,
             },
           },
         ],
-        "import/order": [
-          "error",
+        'import/order': [
+          'error',
           {
             groups: [
-              "builtin",
-              "external",
-              "internal",
-              "sibling",
-              "parent",
-              "index",
+              'builtin',
+              'external',
+              'internal',
+              'sibling',
+              'parent',
+              'index',
             ],
-            "newlines-between": "always",
+            'newlines-between': 'always',
             alphabetize: {
-              order: "asc",
+              order: 'asc',
               caseInsensitive: true,
             },
           },
         ],
-        "react/prop-types": 0,
-        "react/jsx-filename-extension": [
+        'react/prop-types': 0,
+        'react/jsx-filename-extension': [
           1,
           {
-            extensions: [".ts", ".tsx", ".js", ".jsx"],
+            extensions: ['.ts', '.tsx', '.js', '.jsx'],
           },
         ],
-        "react/jsx-sort-props": [
+        'react/jsx-sort-props': [
           2,
           {
             callbacksLast: true,
@@ -83,8 +83,8 @@ module.exports = {
             reservedFirst: true,
           },
         ],
-        "react-hooks/exhaustive-deps": 0,
+        'react-hooks/exhaustive-deps': 0,
       },
     },
   ],
-};
+}
