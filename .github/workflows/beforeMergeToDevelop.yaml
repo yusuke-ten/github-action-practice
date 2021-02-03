@@ -33,7 +33,7 @@ jobs:
       - name: Run install
         run: npm ci
       - name: Run build
-        run: npm run build
+        run: CI='' npm run build
   lint:
     name: Run Lint
     runs-on: ubuntu-latest
