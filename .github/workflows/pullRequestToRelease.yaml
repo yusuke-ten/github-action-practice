@@ -1,0 +1,16 @@
+name: Pull request to release
+on:
+  pull_request:
+    branches:
+      - release
+
+env:
+  NODE_ENV: production
+
+jobs:
+  update_release_draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: release-drafter/release-drafter@v5.3.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
