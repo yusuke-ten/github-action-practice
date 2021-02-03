@@ -26,7 +26,7 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       rules: {
-        'no-console': 2,
+        'no-console': 0
         'prettier/prettier': 'error',
         '@typescript-eslint/no-unused-vars': [
           1,
