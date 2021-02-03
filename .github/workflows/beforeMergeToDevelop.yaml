@@ -1,0 +1,64 @@
+name: Run on before merge to develop
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    name: Run Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - uses: actions/cache@v1.0.3
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-
+      - name: Run install
+        run: npm ci
+      - name: Run build
+        run: npm run build
+  lint:
+    name: Run Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - uses: actions/cache@v1.0.3
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-
+      - name: Run install
+        run: npm ci
+      - name: Run lint
+        run: npm run lint
+  test:
+    name: Run Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - uses: actions/cache@v1.0.3
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-
+      - name: Run install
+        run: npm ci
+      - name: Run test
+        run: npm run test
