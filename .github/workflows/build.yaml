@@ -1,9 +1,9 @@
-name: Build
+name: Build and lint
 on: pull_request
 
 jobs:
   build:
-    name: Build
+    name: Build and lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,3 +21,5 @@ jobs:
         run: npm ci
       - name: Run build
         run: npm run build
+      - name: Run lint
+        run: npm run lint
