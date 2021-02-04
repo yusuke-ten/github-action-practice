@@ -3,6 +3,8 @@ on:
   pull_request:
     branches:
       - develop
+    path:
+      - 'src/**'
 
 env:
   NODE_ENV: development
