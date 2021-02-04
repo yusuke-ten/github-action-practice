@@ -4,7 +4,7 @@ on:
     branches:
       - develop
     path:
-      - 'src/**'
+      - 'src/**/*'
 
 env:
   NODE_ENV: development
