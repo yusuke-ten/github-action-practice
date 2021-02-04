@@ -1,0 +1,27 @@
+- name: 'feature'
+  color: 'a22eef'
+  description: '機能追加'
+
+- name: 'enhancement'
+  color: 'cce5ff'
+  description: '機能改善'
+
+- name: 'bug'
+  color: 'd73a4a'
+  description: 'バグ'
+
+- name: 'refactor'
+  color: 'cfd8d7'
+  description: 'リファクタリング'
+
+- name: 'documentation'
+  color: '0075ca'
+  description: 'ドキュメント追加、改善'
+
+- name: 'test'
+  color: '339933'
+  description: 'テスト追加、改善'
+
+- name: 'repo'
+  color: '696969'
+  description: 'トップレベルコンフィグ'
