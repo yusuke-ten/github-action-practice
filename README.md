@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/yusuke-ten/github-action-practice/branch/develop/graph/badge.svg?token=3Z82EJLS7L)](https://codecov.io/gh/yusuke-ten/github-action-practice)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
