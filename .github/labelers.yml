@@ -1,0 +1,25 @@
+- name: 'feature'
+  color: 'a22eef'
+
+- name: 'enhancement'
+  color: 'cce5ff'
+
+- name: 'bug'
+  color: 'd73a4a'
+  description: "Something isn't working"
+
+- name: 'refactor'
+  color: 'cfd8d7'
+  description: 'This issue or pull request already exists'
+
+- name: 'documentation'
+  color: '0075ca'
+  description: 'Improvements or additions to documentation'
+
+- name: 'test'
+  color: '339933'
+  description: 'This will not be worked on'
+
+- name: 'repo'
+  color: '696969'
+  description: 'This will not be worked on'

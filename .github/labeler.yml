@@ -1,0 +1,12 @@
+workflow:
+  - .github/*.yml
+  - .github/workflows/**/*
+
+repo:
+  - ./*
+
+test:
+  - src/**/*.spec.@(js|jsx|ts|tsx)
+
+documentation:
+  - ./**/*.md
