@@ -1,25 +1,27 @@
 - name: 'feature'
   color: 'a22eef'
+  description: '機能追加'
 
 - name: 'enhancement'
   color: 'cce5ff'
+  description: '機能改善'
 
 - name: 'bug'
   color: 'd73a4a'
-  description: "Something isn't working"
+  description: 'バグ'
 
 - name: 'refactor'
   color: 'cfd8d7'
-  description: 'This issue or pull request already exists'
+  description: 'リファクタリング'
 
 - name: 'documentation'
   color: '0075ca'
-  description: 'Improvements or additions to documentation'
+  description: 'ドキュメント追加、改善'
 
 - name: 'test'
   color: '339933'
-  description: 'This will not be worked on'
+  description: 'テスト追加、改善'
 
 - name: 'repo'
   color: '696969'
-  description: 'This will not be worked on'
+  description: 'トップレベルコンフィグ'
