@@ -1,0 +1,21 @@
+name: Sync labels
+
+on:
+  push:
+    # masterに修正反映。かつ、関連ファイルに修正があった場合のみ実行する
+    branches:
+      - develop
+    paths:
+      - '.github/labels.yml'
+      - '.github/workflows/syncLabels.yml'
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: crazy-max/ghaction-github-labeler@v1.1.1
+        with:
+          yaml_file: '.github/labels.yml'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
