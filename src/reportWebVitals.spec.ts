@@ -1,6 +1,7 @@
-import { reportWebVitals } from './reportWebVitals'
 import { waitFor } from '@testing-library/react'
 import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals'
+
+import { reportWebVitals } from './reportWebVitals'
 
 jest.mock('web-vitals', () => ({
   getCLS: jest.fn(),
@@ -17,4 +18,13 @@ test('reportWebVitals', async () => {
   await waitFor(() => expect(getFCP).toHaveBeenCalled())
   await waitFor(() => expect(getLCP).toHaveBeenCalled())
   await waitFor(() => expect(getTTFB).toHaveBeenCalled())
+})
+
+test('reportWebVitals is not called', async () => {
+  reportWebVitals()
+  expect(getCLS).not.toHaveBeenCalled()
+  expect(getFID).not.toHaveBeenCalled()
+  expect(getFCP).not.toHaveBeenCalled()
+  expect(getLCP).not.toHaveBeenCalled()
+  expect(getTTFB).not.toHaveBeenCalled()
 })
