@@ -25,3 +25,11 @@
 - name: 'repo'
   color: '696969'
   description: 'トップレベルコンフィグ'
+
+- name: 'dependencies'
+  color: 'f39800'
+  description: 'パッケージ更新'
+
+- name: 'workflow'
+  color: '507ea4'
+  description: 'github actions workflow'

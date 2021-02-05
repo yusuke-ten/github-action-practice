@@ -10,3 +10,7 @@ test:
 
 documentation:
   - ./**/*.md
+
+chore:
+  - package.json
+  - package.lock.json
